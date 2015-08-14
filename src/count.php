@@ -10,11 +10,12 @@
 
               foreach($phrase_array as $count){
                 sort($phrase_array);
-                  if($word == $phrase_array) {
-                    array_push($output, $count);
+                if($lc_word == $phrase_array) {
+                  array_push($output, $count);
+                  return $word;
                   }
-              }
-              return $word;
+
+                }
         }
     }
 ?>
