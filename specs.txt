@@ -1,0 +1,14 @@
+specs for count_repeats
+
+
+Interface: Form with an input field for a user to put in a sentence,
+and a second form to enter a word to have it counted.
+
+
+1. Behavior: user enters string with a second string consisting of one word to check against the first string.
+to see if it is present.
+
+Input: "Jack and Jill fell down the hill.", 2nd string "fell"
+output: "fell = 1"
+
+2.
