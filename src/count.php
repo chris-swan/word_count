@@ -8,13 +8,11 @@
               $phrase_array = explode(" ", $lc_phrase);
               $output = array();
 
-              foreach($phrase_array as $count){
-                sort($phrase_array);
-                if($lc_word == $phrase_array) {
-                  array_push($output, $count);
-                  }
-                  return $word;
-                }
-        }
+              $count_word = array_count_values($phrase_array);
+
+          }
+
+
     }
+
 ?>
