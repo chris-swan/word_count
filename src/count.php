@@ -12,9 +12,8 @@
                 sort($phrase_array);
                 if($lc_word == $phrase_array) {
                   array_push($output, $count);
-                  return $word;
                   }
-
+                  return $word;
                 }
         }
     }
