@@ -3,29 +3,18 @@
     {
         function countWord($phrase, $word)
         {
-          $lc_phrase=strtolower($phrase);
-          $lc_word=strtolower($word);
-          $phrase_array = explode(" ", $phrase);
-          //may need ", " instead of just " ^^
-          //$output = array();
+              $lc_word = strtolower($word);
+              $lc_phrase = strtolower($phrase);
+              $phrase_array = explode(" ", $lc_phrase);
+              $output = array();
 
-          foreach($phrase_array as $counted_word) {
-            if($counted_word->word === $lc_word ) {
-              $count++;
+              foreach($phrase_array as $count){
+                sort($phrase_array);
+                  if($word == $phrase_array) {
+                    array_push($output, $count);
+                  }
               }
-                if ($counted_word != 0){
-                return $count_word;
-              }
-            }
-          }
-
-
-      //return $count;
-    //}
+              return $word;
+        }
     }
-
-  //  foreach ($phrase_array as $outcome){
-  //    $counted_word = ($outcome, $lc_word);
-
-
 ?>
