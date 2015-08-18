@@ -4,13 +4,13 @@
     function countWord($phrase, $word)
     {
       //set all input to lower case to ensure all matches are caught
-      $lc_word = strtolower($word);
-      $lc_phrase = strtolower($phrase);
-      $phrase_array = explode(" ", $lc_phrase);
+      $lower_case_word = strtolower($word);
+      $lower_case_phrase = strtolower($phrase);
+      $phrase_array = explode(" ", $lower_case_phrase);
       $result = 0;
         
       foreach ($phrase_array as $match) {
-         if ($lc_word === $match) {
+         if ($lower_case_word === $match) {
             ++$result;
          }
       }

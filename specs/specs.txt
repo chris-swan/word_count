@@ -5,24 +5,14 @@ Interface: Form with an input field for a user to put in a sentence,
 and a second form to enter a word to have it counted.
 
 
-1. Behavior: user enters input, input is returned to user:
+1. Behavior: user enters input phrase & word, word count is returned to user:
 
-Input: "Jack and Jill fell down the hill"
-output: "Jack and Jill fell down the hill"
+Input: "Jack and Jill fell down the hill" & "the"
+output: " 'the' was used one time."
 
-2. Behavior: user enters input, and input is returned to lower in lower case text:
+2. Behavior: User enters input phrase and word, any non words or letters are excluded:
 
-Input: JACK AND Jill fell down the hill
-output: jack and jill fell down the hill
+Input: "Jack and Jill fell down the hill!!!" & "!!!"
+output: "You did not have any words to match"
 
 
-3. Behavior: user enters phrase $ second input 'word, to match to the phrase'. matching word is returned if pressent.
-
-Input: "Jack and Jill fell down the hill" & "fell"
-output: "fell"
-
-4. Behavior: user enters string with a second string consisting of one word to check against the first string.
-to see if it is present.
-
-Input: "Jack and Jill fell down the hill.", 2nd string "fell"
-output: "fell = 1"
