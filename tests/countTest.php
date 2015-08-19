@@ -5,9 +5,9 @@
     class CountTest extends PHPUnit_Framework_TestCase
     {   
 
-        function test_countWord_one_letter()
+        function test_count_oneLetter();
             //Arrange
-            $text_Count = new Count;
+            $test_Count = new Count;
             $phrase = "f";
             $word = "f";
 
@@ -15,9 +15,9 @@
             $result = $test_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals(1, $result)
-            
-        function test_countWord_one_word_one_count()
+            $this->assertEquals("1", $result);
+
+        function test_count_oneWord()
         {
             //Arrange
             $test_Count = new Count;
@@ -28,10 +28,10 @@
             $result = $test_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("1", $result);
         }
         
-        function test_countWord_word()
+        function test_count_word()
         {
             //Arrange
             $test_Count = new Count;
@@ -42,9 +42,9 @@
             $result = $test_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals("fell", $result);
+            $this->assertEquals("1", $result);
         }
-        function text_exclude_none_letters()
+        function text_count_excludeNoneLetters()
         {
             //Arrange
             $text_Count = new count;
@@ -59,6 +59,7 @@
 
 
         }
+
   }
 
 ?>
