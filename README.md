@@ -6,7 +6,7 @@ By Chris Swan
 
 Description
 
-A web app using Silex & twig to create a word counter to count the number of times a word was used in a phrase. Got really hung up on how to take find the number of times it repeated and return it to print to the user, tried a couple of methods, didn't quite get there. Epicodus Week 2 code review from 8/14/15
+A web app using Silex & twig to create a word counter to count the number of times a word was used in a phrase. Epicodus Week 2 code review from 8/14/15
 
 Setup
 

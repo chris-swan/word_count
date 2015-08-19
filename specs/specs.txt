@@ -5,14 +5,24 @@ Interface: Form with an input field for a user to put in a sentence,
 and a second form to enter a word to have it counted.
 
 
-1. Behavior: user enters input phrase & word, word count is returned to user:
+1. behavior: user enters a single letter, searches for number of times it is entered and number is returned:
+
+Input: 't'
+output: '1'
+
+2. Behavior: user enters a word(string), and enters a word(string) to check against and return the number of times it is used:
+
+Input: 'the'
+output: '1'
+
+3. Behavior: user enters input phrase & word, word count is returned to user:
 
 Input: "Jack and Jill fell down the hill" & "the"
 output: " 'the' was used one time."
 
-2. Behavior: User enters input phrase and word, any non words or letters are excluded:
+4. Behavior: User enters input phrase and word, any non words or letters are excluded:
 
 Input: "Jack and Jill fell down the hill!!!" & "!!!"
-output: "You did not have any words to match"
+output: "You did not have any words that matched
 
 
