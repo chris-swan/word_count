@@ -5,7 +5,8 @@
     class CountTest extends PHPUnit_Framework_TestCase
     {   
 
-        function test_count_oneLetter();
+        function test_count_oneLetter()
+        {
             //Arrange
             $test_Count = new Count;
             $phrase = "f";
@@ -15,7 +16,8 @@
             $result = $test_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals("1", $result);
+            $this->assertEquals("Your word, 'f', appeared one time in the phrase: 'f'", $result);
+        }
 
         function test_count_oneWord()
         {
@@ -28,7 +30,7 @@
             $result = $test_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals("1", $result);
+            $this->assertEquals("Your word, 'fell', appeared one time in the phrase: 'fell'", $result);
         }
         
         function test_count_word()
@@ -42,20 +44,20 @@
             $result = $test_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals("1", $result);
+            $this->assertEquals("Your word, 'fell', appeared one time in the phrase: 'Jack and Jill fell down the hill!!!'", $result);
         }
         function text_count_excludeNoneLetters()
         {
             //Arrange
             $text_Count = new count;
-            $phrase = "Jack and jill fell down the hill!!!"
-            $word = "!!!"
+            $phrase = "Jack and jill fell down the hill!!!";
+            $word = "!!!";
 
             //Act
             $result = $text_Count->countWord($phrase, $word);
 
             //Assert
-            $this->assertEquals("Your word is not found in this phrase.")
+            $this->assertEquals("Your word is not found in this phrase.");
 
 
         }

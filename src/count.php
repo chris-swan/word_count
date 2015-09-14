@@ -24,9 +24,9 @@
 
           //depending on what output matches, return specifics of input workd and match.
           if ($result > 1) {
-              return "Your word, '" . $word . "', appeared $result times in the phrase: $phrase";
+              return "Your word, '" . $word . "', appeared $result times in the phrase: '$phrase'";
           } elseif ($result == 1) {
-              return "Your word, '" . $word . "', appeared one time in the phrase: $phrase";
+              return "Your word, '" . $word . "', appeared one time in the phrase: '$phrase'";
           } else {
               return "Your word is not found in this phrase.";
           }
